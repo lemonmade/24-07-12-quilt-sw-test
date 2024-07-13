@@ -9,14 +9,14 @@ importers:
   .:
     devDependencies:
       '@quilted/quilt':
-        specifier: ^0.7.0
-        version: 0.7.6(@preact/signals-core@1.7.0)(@quilted/react@18.2.11)(graphql@16.9.0)(preact@10.22.1)(prettier@3.3.2)(vitest@1.6.0(jsdom@24.1.0)(lightningcss@1.25.1))
+        specifier: ^0.7.7
+        version: 0.7.7(@preact/signals-core@1.7.0)(@quilted/react@18.2.11)(graphql@16.9.0)(preact@10.22.1)(prettier@3.3.2)(vitest@1.6.0(jsdom@24.1.0)(lightningcss@1.25.1))
       '@quilted/rollup':
         specifier: ^0.2.0
         version: 0.2.32(@babel/template@7.24.7)(@babel/traverse@7.24.8)(@babel/types@7.24.8)(rollup@4.18.1)
       '@quilted/typescript':
-        specifier: ^0.3.0
-        version: 0.3.1
+        specifier: ^0.4.0
+        version: 0.4.1
       '@quilted/vite':
         specifier: ^0.1.0
         version: 0.1.22(@babel/template@7.24.7)(@babel/traverse@7.24.8)(@babel/types@7.24.8)(preact@10.22.1)(rollup@4.18.1)(vite@5.3.3(lightningcss@1.25.1))(vitest@1.6.0(jsdom@24.1.0)(lightningcss@1.25.1))
@@ -1036,8 +1036,8 @@ packages:
       preact:
         optional: true
 
-  '@quilted/quilt@0.7.6':
-    resolution: {integrity: sha512-63eBRrtBA1arWlz0YNzSHQ45JD5MANz2s3RdEJLTzwvyBg6+Ef7LccM3nhDcTVM/eB+4x8vCey2B3TE90qFfBQ==}
+  '@quilted/quilt@0.7.7':
+    resolution: {integrity: sha512-jZdAICGWdyI3x9yeL72dahQXa6yYVjHl0eP7vl9vuElGytsWIeogU0nLUpGQUTpJgiEmPahcC0KJW/Mv9zuHag==}
     peerDependencies:
       graphql: ^16.8.0
       preact: ^10.21.0
@@ -1076,8 +1076,8 @@ packages:
     resolution: {integrity: sha512-iGWkDiDpR2xq0FmAF/ix/cz1qUtz2USp+8kam/QnHe0i50uKCBkufv/QHv0QhhB2/eKbHwa8wxKwslCKdiyS2w==}
     engines: {node: '>=14.0.0'}
 
-  '@quilted/threads@2.2.0':
-    resolution: {integrity: sha512-1STcdYtWyVrRs2hfA0CYFvtjl2LA8uVJrJGwsYDbuC2WNyjvRrqgB6IHVuzt3rhapXLeo2AjIfM9V2wVcdhByQ==}
+  '@quilted/threads@2.3.0':
+    resolution: {integrity: sha512-J7x4SEydjAUw4f5ZlgoyTimXPFprF/L0YbutwMS/oQuUJAGfoAdj7tmixhwlCprIyIRu6bmran3XFtoq77f/wg==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       '@preact/signals-core': ^1.6.0
@@ -1085,8 +1085,8 @@ packages:
       '@preact/signals-core':
         optional: true
 
-  '@quilted/typescript@0.3.1':
-    resolution: {integrity: sha512-NNjkmk5g9IbaWPWLk08M18OiB6KDBLl4qDqJtmoFvQWMT9dExRCCKxEPJ5URh4E4cr6V4De4lQfqF/gQFY+7kg==}
+  '@quilted/typescript@0.4.1':
+    resolution: {integrity: sha512-nmBJtj7lwzKADxy1wQDuN2GAo1iwVSJDET8laDccYByVbrKx/sMA/e97PvmrWWzSGxSP8LXBlDGkV6Jg5pd77w==}
     engines: {node: '>=18.0.0'}
 
   '@quilted/useful-types@2.0.0':
@@ -3553,7 +3553,7 @@ snapshots:
     transitivePeerDependencies:
       - '@preact/signals-core'
 
-  '@quilted/quilt@0.7.6(@preact/signals-core@1.7.0)(@quilted/react@18.2.11)(graphql@16.9.0)(preact@10.22.1)(prettier@3.3.2)(vitest@1.6.0(jsdom@24.1.0)(lightningcss@1.25.1))':
+  '@quilted/quilt@0.7.7(@preact/signals-core@1.7.0)(@quilted/react@18.2.11)(graphql@16.9.0)(preact@10.22.1)(prettier@3.3.2)(vitest@1.6.0(jsdom@24.1.0)(lightningcss@1.25.1))':
     dependencies:
       '@quilted/assets': 0.1.2
       '@quilted/async': 0.4.17
@@ -3573,7 +3573,7 @@ snapshots:
       '@quilted/react-dom': 18.2.14
       '@quilted/request-router': 0.3.0
       '@quilted/signals': 0.2.2
-      '@quilted/threads': 2.2.0(@preact/signals-core@1.7.0)
+      '@quilted/threads': 2.3.0(@preact/signals-core@1.7.0)
       jest-matcher-utils: 29.7.0
       preact-render-to-string: 6.5.5(preact@10.22.1)
     optionalDependencies:
@@ -3655,13 +3655,13 @@ snapshots:
       '@preact/signals-core': 1.7.0
       '@quilted/events': 2.0.0
 
-  '@quilted/threads@2.2.0(@preact/signals-core@1.7.0)':
+  '@quilted/threads@2.3.0(@preact/signals-core@1.7.0)':
     dependencies:
       '@quilted/events': 2.0.0
     optionalDependencies:
       '@preact/signals-core': 1.7.0
 
-  '@quilted/typescript@0.3.1': {}
+  '@quilted/typescript@0.4.1': {}
 
   '@quilted/useful-types@2.0.0': {}
 
@@ -3686,7 +3686,7 @@ snapshots:
 
   '@quilted/workers@0.4.3(@preact/signals-core@1.7.0)':
     dependencies:
-      '@quilted/threads': 2.2.0(@preact/signals-core@1.7.0)
+      '@quilted/threads': 2.3.0(@preact/signals-core@1.7.0)
     transitivePeerDependencies:
       - '@preact/signals-core'
 

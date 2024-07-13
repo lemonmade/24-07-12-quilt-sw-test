@@ -11,6 +11,21 @@ import {App} from './App.tsx';
 const router = new RequestRouter();
 const assets = new BrowserAssets();
 
+router.get('/service-worker.js', async (request) => {
+  const originalResponse = await fetch(
+    new URL('/assets/service-worker.js', request.url),
+  );
+
+  const headers = new Headers(originalResponse.headers);
+  headers.set('Cache-Control', 'no-cache');
+
+  return new Response(originalResponse.body, {
+    status: originalResponse.status,
+    statusText: originalResponse.statusText,
+    headers,
+  });
+});
+
 // For all GET requests, render our React application.
 router.get(async (request) => {
   const context = {

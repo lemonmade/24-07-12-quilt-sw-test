@@ -2,6 +2,7 @@
   "extends": "@quilted/typescript/tsconfig.project.json",
   "compilerOptions": {
     "jsxImportSource": "preact",
+    "lib": ["WebWorker", "ESNext"],
     "paths": {
       "~/shared/*": ["./shared/*"],
       "~/tests/*": ["./tests/*"],
